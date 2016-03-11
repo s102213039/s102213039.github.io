@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="PMTL.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <style >
+    .newClass {
+        width: 240px;  
+        height:400px;
+        padding: 1em; 
+        letter-spacing: 0; 
+        font-size: 1.2em; 
+        color:black;
+        float:left;
+        margin:10px 10px;
+        border:2px solid black;
+        background-color:#556656;
+    }
+
+    .anotherNewClass {
+        text-indent: 40px; 
+        letter-spacing: .4em; 
+        width: 410px; 
+        height: 500px; 
+        padding: 30px; 
+        font-size: 1.6em; 
+        color:black;
+        float:left;
+        margin:10px 10px;
+        border:2px solid black;
+        background-color:#665565;
+    }
+  </style>
+    <title>雙欄式網頁版型</title>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#sect").toggle();
+            });
+            $("#cc").click(function(){
+                $(".newClass").switchClass("newClass","anotherNewClass",1000);
+                $(".anotherNewClass").switchClass("anotherNewClass","newClass",1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<header id="header">
+    個人簡介
+</header>
+<nav id="nav">
+    <h1>nav 導覽列</h1>
+</nav>
+<aside id="aside">
+    i am aside
+</aside>
+<button id="btn">案案看</button>
+<button id="cc">change class</button>
+<div id="sect">
+  <div class="newClass">
+    <section id="section">
+      我叫邱彥瑜，目前就讀於暨南大學資訊管理學系，專長無，興趣無，喜歡上PTT，廢物一枚。
+    </section>
+  </div>
+</div><br/>
+<footer id="footer">
+    its me
+</footer>
+</body>
+</html>

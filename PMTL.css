@@ -1,0 +1,38 @@
+body{ 
+
+    color: #FFF; 
+    margin:0 auto; 
+    font-family: sans-serif, "微軟正黑體"; 
+} 
+#header{
+    background-color: #425660; 
+    padding: 20px; 
+    margin:3px 3px;
+    } 
+#nav{
+    background-color: #20292F; 
+    padding: 5px; 
+    margin:3px 3px;
+    } 
+#aside{
+    width: 150px; 
+    height: 900px; 
+    text-align: center; 
+    background-color: #63808F; 
+    padding:20px 10px; 
+    float: left; 
+    margin:3px 3px;
+    clear:both;
+    } 
+#footer{
+    padding:20px; 
+    background-color: #425660; 
+    margin:3px 3px;
+    clear: both; 
+    } 
+h1{ 
+    font-family: sans-serif, "微軟正黑體"; 
+    font-size: 18px; 
+    color: #FFF; 
+    text-align: center; 
+    } 
